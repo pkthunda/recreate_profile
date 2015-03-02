@@ -1,8 +1,11 @@
-<link href="https://assets-cdn.github.com/assets/github-71026dc447d12cdf19996cb5d0313a4993f064d46a3dc90bec7724a3c9eaf344.css" media="all" rel="stylesheet" />
-<link href="https://assets-cdn.github.com/assets/github2-cdf30895e7e63a6a3495f768847199795affd3511d5f37a8fd30968750977434.css" media="all" rel="stylesheet" />
 
 <p><%= image_tag @profile.avatar %></p>
-<ol><% @profile.repo.each do |r| %>
-    <li><%= link_to r["name"] %></li>
-</ol>
-<% end %>
+<h2>
+  <ul>
+    <br>
+      <% @profile.repo.each do |r| %>
+        <li><%= link_to r["name"] %></li>
+      <% end %>
+    </br>
+  </ul>
+</h2>
